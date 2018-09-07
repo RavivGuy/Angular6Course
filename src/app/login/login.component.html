@@ -1,0 +1,11 @@
+<label>Login</label>
+<input
+  type="text"
+  class="form-cntrol"
+  [(ngModel)]="userName">
+<p>{{userName}}</p>
+
+<button 
+[disabled]="!isUserNameValid()" 
+(click)="submit()" >Submit</button>
+<p>{{submitResult}}</p>
