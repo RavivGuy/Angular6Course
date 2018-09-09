@@ -1,3 +1,12 @@
 <p [ngStyle]="{backgroundColor : getServerColor()}"
     [ngClass]="{online : getServerStatus() === 'online'}">
     {{ 'Server' }} {{ serverName }} {{ server }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
+
+<button
+    class="btn btn-primary"
+    show="isDisplayDetails"
+    (click)="toggleDisplayDetails()">{{toggleDisplayDetailesDescreption}}</button>
+<p *ngIf="isDisplayDetails">{{ details }}</p>
+<br>
+<p *ngFor="let click of clicksArray; let clickNum = index"
+    [ngClass]="{logClick : clickNum > 5}">{{click}}</p>
