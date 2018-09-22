@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "../node_modules/boorstarp/dist/css/bootstrap.min.css",
+              "../node_modules/bootstarp/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
