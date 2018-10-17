@@ -1,4 +1,3 @@
-import { Ingredient } from './../shared/ingredient.model';
 import { Ingredient } from '../shared/ingredient.model';
 import { EventEmitter } from '@angular/core';
 
